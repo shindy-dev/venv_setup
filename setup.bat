@@ -6,7 +6,7 @@ set ERROR=ERROR:
 rem ### const value  End  ###
 
 rem venv 作成パス
-set VENVPATH="%~dp0venv"
+set VENVPATH="%~dp0.venv"
 rem venv スクリプトパス
 set SCRIPTSPATH="%VENVPATH%\Scripts"
 
