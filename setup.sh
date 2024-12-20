@@ -7,7 +7,7 @@ ERROR="ERROR:"
 
 
 # venv 作成パス
-VENVPATH="`cd $(dirname ${0}) && pwd`/venv"
+VENVPATH="`cd $(dirname ${0}) && pwd`/.venv"
 # venv スクリプトパス
 SCRIPTSPATH="$VENVPATH/bin"
 
