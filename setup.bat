@@ -36,19 +36,19 @@ if not exist %VENVPATH% (
 )
 
 rem venv をアクティブ化
-call %SCRIPTSPATH%\activate
+call "%SCRIPTSPATH%\activate"
 
 echo|set /p="install library ... "
 rem ライブラリインストール
-call pip --disable-pip-version-check --quiet install -r %~dp0requirements.txt
+call python -m pip --disable-pip-version-check --quiet install -r "%~dp0requirements.txt"
 echo ok
 
 echo.
 rem インストール後の環境
-call pip --disable-pip-version-check list
+call python -m pip --disable-pip-version-check list
 
 rem venv を非アクティブ化
-call %SCRIPTSPATH%\deactivate
+call "%SCRIPTSPATH%\deactivate"
 
 echo.
 echo ### Finished Setup. ###
